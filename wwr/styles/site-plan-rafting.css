@@ -1,0 +1,57 @@
+/* Import Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #acbed8;
+  --secondary-color: #f2d398;
+  --accent1-color: #e8ebf7;
+  --accent2-color: #d78521;
+
+  --heading-font: '______', serif;
+  --paragraph-font: '______', serif;
+
+  --nav-background-color: #acbed8;
+  --nav-link-color: #f2d398;
+  --nav-hover-link-color: #e8ebf7;
+  --nav-hover-background-color: #d78521;
+}
+
+/* Body Selector Rule */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headings Grouping Selector */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: /* Your choice of heading color */;
+}
+
+/* Header Selector */
+header {
+  padding: 20px;
+  background-color: var(--primary-color); /* Use your selected color for the header background */
+}
+
+/* Paragraph Selector */
+p {
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* Navigation Selector and Anchor Tag Children */
+nav {
+  background-color: var(--nav-background-color);
+}
+
+nav a {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
