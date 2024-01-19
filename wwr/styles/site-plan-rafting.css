@@ -1,5 +1,5 @@
 /* Import Google Fonts API */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap');
 
 /* Define CSS Variables */
 :root {
@@ -8,8 +8,8 @@
   --accent1-color: #e8ebf7;
   --accent2-color: #d78521;
 
-  --heading-font: 'montserrat', serif;
-  --paragraph-font: 'montserrat', serif;
+  --heading-font: 'Open Sans', sans-serif;
+  --paragraph-font: 'Poppins', sans-serif;
 
   --nav-background-color: #acbed8;
   --nav-link-color: #f2d398;
@@ -28,7 +28,7 @@ body {
 /* Headings Grouping Selector */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  color: /* Your choice of heading color */;
+  color: #d78521/* Your choice of heading color */;
 }
 
 /* Header Selector */
