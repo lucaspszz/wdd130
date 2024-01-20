@@ -12,8 +12,8 @@
   --paragraph-font: 'Poppins', sans-serif;
 
   --nav-background-color: #157F1F;
-  --nav-link-color: #1D263B;
-  --nav-hover-link-color: #5C6784;
+  --nav-link-color: #5C6784;
+  --nav-hover-link-color: #1D263B;
   --nav-hover-background-color: #d78521;
 }
 
@@ -45,11 +45,22 @@ p {
 /* Navigation Selector and Anchor Tag Children */
 nav {
   background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
 }
 
 nav a {
   color: var(--nav-link-color);
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
 }
+
+  nav a:link, nav a:visited{
+    color: var(--nav-link-color);
+  }
+
+
 
 nav a:hover {
   color: var(--nav-hover-link-color);
