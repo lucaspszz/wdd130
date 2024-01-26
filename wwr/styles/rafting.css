@@ -1,74 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap');
-:root {
-    --primary-color: #0d50b4;
-    --secondary-color: #157F1F;
-    --accent1-color: #5C6784;
-    --accent2-color: #4CB963;
-  
-    --heading-font: 'Open Sans', sans-serif;
-    --paragraph-font: 'Poppins', sans-serif;
-  
-    --nav-background-color: #157F1F;
-    --nav-link-color: #5C6784;
-    --nav-hover-link-color: #1D263B;
-    --nav-hover-background-color: #d78521;
-  }
+/* rafting.css */
 
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap');
+
+/* Define CSS variables based on your color scheme */
+:root {
+  --primary-color: #3498db; /* Replace with your primary color */
+  --secondary-color: #2ecc71; /* Replace with your secondary color */
+  --text-color: #333; /* Replace with your text color */
+}
+
+/* Body styles */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'YourSelectedFont', sans-serif;
   color: var(--text-color);
   margin: 0;
   padding: 0;
 }
+
+/* Container styles (limiting entire width of the page) */
 .container {
-max-width: 1200px;
-margin:0 auto;
+  max-width: 1200px; /* Adjust as needed based on your design */
+  margin: 0 auto;
 }
+
+/* Hero styles */
 .hero {
-    position: relative;
+  position: relative;
 }
 
-.hero img{
-    width: 100%;
-    display: block;
+/* Hero image styles */
+.hero img {
+  width: 100%; /* Relative width to fill the container */
+  display: block;
 }
+
+/* Heading styles */
 h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--primary-color);
-}
-article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 20px;
-    width: 70%; 
-  }
-  article img {
-    float: right;
-    margin-left: 20px;
-  }
-
-h1, h2, h3, h4, h5, h6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: var(--primary-color);
 }
 
+/* Article styles */
+article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+  padding: 20px;
+  width: 70%; /* Adjust width as needed */
+}
+
+/* Paragraph styles */
 p {
   margin-bottom: 15px;
 }
 
-a {
-  color: var(--primary-color);
-  text-decoration: none;
+/* Image inside article styles */
+article img {
+  float: right;
+  margin-left: 20px;
 }
 
-.social-link {
-  text-decoration: none;
-}
+/* Additional styles can be added as needed based on your design */
+
 
 
 
