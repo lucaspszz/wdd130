@@ -57,7 +57,6 @@ p {
   margin-bottom: 15px;
 }
 
-
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -66,6 +65,7 @@ a {
 .social-link {
   text-decoration: none;
 }
+
 
 
 
