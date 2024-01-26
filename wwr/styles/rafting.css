@@ -20,6 +20,34 @@ body {
   margin: 0;
   padding: 0;
 }
+.container {
+max-width: 1200px;
+margin:0 auto;
+}
+.hero img{
+    width: 100%;
+    display: block;
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+}
+article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    width: 70%; 
+  }
+  article img {
+    float: right;
+    margin-left: 20px;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
@@ -39,9 +67,5 @@ a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1200px; 
-  margin: 0 auto;
-}
 
 
