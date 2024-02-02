@@ -120,7 +120,7 @@ section h2 {
 
 .adventures-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     justify-content: space-evenly;
 }
@@ -138,6 +138,20 @@ section img {
 
 figcaption {
     text-align: center;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.history-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 footer {
