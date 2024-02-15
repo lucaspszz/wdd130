@@ -7,6 +7,80 @@
     <meta name="description" content="See our Trips">
     <meta name="author" content="Lucas Pereira">
     <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        /* Additional CSS for wireframe */
+        .hero {
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            display: block;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trip-description {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .trip-description h2 {
+            text-align: center;
+        }
+
+        .trip-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .trip-details img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .trip-table {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .trip-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .trip-table th, .trip-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .trip-table th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .trip-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .trip-table tr:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,10 +95,74 @@
         </nav>
     </header>
     <main>
-<section>
-    <h1>Are you interested?</h1>
-    <a href="contact.html">Contact us if interested in any Plan of Trips! ☎️</a>
-</section>
+        <section class="hero">
+           
+            <img src="images/trips_hero.jpg" alt="Trips Hero Image">
+            <h1>Explore Our Exciting Trips</h1>
+        </section>
+
+        <section class="trip-description">
+            <div class="container">
+                <h2>Trip 1</h2>
+                <div class="trip-details">
+                    <img src="images/trip1.jpg" alt="Trip 1" width="200">
+                    <p>Description of Trip 1...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trip-description">
+            <div class="container">
+                <h2>Trip 2</h2>
+                <div class="trip-details">
+                    <img src="images/trip2.jpg" alt="Trip 2" width="200">
+                    <p>Description of Trip 2...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trip-description">
+            <div class="container">
+                <h2>Trip 3</h2>
+                <div class="trip-details">
+                    <img src="images/trip3.jpg" alt="Trip 3" width="200">
+                    <p>Description of Trip 3...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trip-table">
+            <div class="container">
+                <h2>Available Trips</h2>
+                <!-- Placeholder for table outlining available trips -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Trip 1</td>
+                            <td>3 days</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <td>Trip 2</td>
+                            <td>5 days</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>Trip 3</td>
+                            <td>7 days</td>
+                            <td>$700</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
     </main>
     <footer>
