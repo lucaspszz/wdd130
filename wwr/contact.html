@@ -8,12 +8,14 @@
     <meta name="author" content="Lucas Pereira">
     <link rel="stylesheet" href="styles/rafting.css">
     <style>
-/* Estilos para o wireframe */
+/* Estilos para a organização da Company Information, imagens dos funcionários, mapa e formulário */
 
-/* Posicionamento dos elementos */
-main {
-    padding: 20px;
+/* Estilo para a seção Company Information */
+section {
+    text-align: center;
+    margin-bottom: 30px;
 }
+
 /* Estilo para o título "Company Information" */
 section h1 {
     color: var(--primary-color);
@@ -26,20 +28,6 @@ section p {
 }
 
 /* Estilo para os perfis dos funcionários */
-.employee-profile p {
-    margin-top: 10px;
-}
-
-/* Estilo para o título do formulário de contato */
-main h2 {
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 20px;
-}
-section {
-    margin-bottom: 30px;
-}
-
 .employee-profile {
     display: flex;
     flex-direction: column;
@@ -48,13 +36,23 @@ section {
 }
 
 .employee-profile img {
-    width: 100px; /* Tamanho das imagens dos perfis dos funcionários */
-    height: 100px;
+    width: 150px; /* Tamanho das imagens dos funcionários */
+    height: 150px;
     border-radius: 50%; /* Arredondar a borda das imagens */
+    margin-bottom: 10px;
 }
 
-/* Estilos para o formulário de contato */
-form {
+/* Estilo para o mapa */
+section iframe {
+    width: 100%; /* Tamanho do mapa */
+    max-width: 600px;
+    height: 300px;
+    margin: 0 auto 20px auto;
+    border: none;
+}
+
+/* Estilo para o formulário de contato */
+main form {
     background-color: #f9f9f9;
     padding: 20px;
     margin-bottom: 30px;
@@ -62,7 +60,7 @@ form {
 
 form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 form input[type="text"],
@@ -80,6 +78,14 @@ form textarea {
     resize: vertical;
 }
 
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form label[for="subscribe"] {
+    display: inline;
+}
+
 form button[type="submit"] {
     background-color: var(--primary-color);
     color: #fff;
@@ -92,6 +98,7 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #0a3d91;
 }
+
 
     </style>
 </head>
